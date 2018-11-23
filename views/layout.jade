@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title Bakery Application
+    link(rel='stylesheet', href='app.css', type='text/css')
+  body
+    .spacers
+      h1
+        marquee(direction='right', ;='', behavior='alternate', width='50%')
+          | Welcome to SCAR&copy Bakery Application 
+        br
+        br
+        img#poster.logiIm(alt='lo', src='../logo.jpg' style = "height:5%")
+      .navhold
+        ul
+          li
+            a(href='/') Home
+          li
+            a(href='/produce') Produce
+          li
+            a(href='/add') Add Inventory
+          li
+            a(href='/') Information
+        block content
+
+        .footer
+             p SCAR&copy Bakery Application
+             p The Images are sourced from all over the internet

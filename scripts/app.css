@@ -1,0 +1,134 @@
+body {
+    background-color: #555;
+    background-image: url("/bakery.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    min-height:900px; /* we will remove this later */
+    text-align: center;
+}
+
+h1{
+    font-weight: bold;
+    color:   #FFE0C0;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFE0C0;
+    width:50%;
+    margin-left:25%;
+}
+
+li {
+    float: left;
+    text-align:center;
+    width:25%;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: yellow;
+    color:red;
+}
+
+.row {
+    
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+.normal h1 {
+    margin-bottom: 2px;    
+    font-size: 75px;
+    color: blue;
+}
+
+
+.normal h2 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 75px;
+    color: blue;
+}
+
+.normal1 h1 {
+    margin-bottom: 2px;    
+    font-size: 75px;
+    color: blue;
+}
+
+
+.normal1 h2 {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    padding-bottom:30px;
+    font-size: 75px;
+    color: blue;
+}
+
+
+.normal2 h1 {
+    margin-bottom: 2px;    
+    font-size: 75px;
+    color: blue;
+}
+
+
+.normal2 h2 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 75px;
+    color: blue;
+}
+
+.normal{
+    width: 30%;
+    background-image: url('/cupcake.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    float: left;
+    height: 300px;
+    margin:1%;
+}
+
+.normal1 {
+    width: 30%;
+    background-image: url('/brobread.jpg');
+    background-repeat:repeat;
+    background-size:cover;
+    float: left;
+    height: 300px;
+    margin:1%;
+}
+
+.normal2 {
+    width: 30%;
+    background-image: url('/events.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    float: left;
+    height: 300px;
+    margin: 1%;
+}
+
+
+.footer {
+    background-color: #FFE0C0;
+    color:black;
+    margin-left: 27%;
+    width: 45%;
+    font-size: 30px;
+    display: block;
+}
