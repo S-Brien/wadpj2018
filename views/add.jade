@@ -1,17 +1,21 @@
 extends layout
 block content
       .row
-          h1 Welcome To The Add Product Page <br><br>
-             .formHold
-               h3.itemtitle Add New Product <br><br>
-                   form(method="post")  
-                       fieldset 
-                         label(for="name") Product Name:
-                         input(name="name", type="text", placeholder="Enter a product Name")
-                         label(for="type") Type:
-                         input(name="type", type="text", placeholder="Enter a sport for this product")
-                         label(for="image") Image:
-                         input(name="image", type="text", placeholder="Enter an image for this product")
-                         label(for="price") Price:
-                         input(name="price", type="text", placeholder="Enter a price for this product")
-                         button.button1(type="button") Create New Inventory Item
+          .formHold
+          h3.itemtitle Add New Inventory <br><br>
+            form(method="post")
+              fieldset 
+                label(for="name") Product Name:
+                input(name="name", type="text", placeholder="Enter a product Name Letters only", required, pattern="[A-Za-z]")
+                label(for="type") Type:
+                input(name="type", type="text", placeholder="Enter a Product Type")
+                label(for="price") Price:
+                input(name="price", type="text", placeholder="Enter a price for this product")
+                button.button1(type="submit") Create New Inventory Item
+                         
+                         
+                         
+                         
+                         
+                         
+    

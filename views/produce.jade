@@ -1,3 +1,15 @@
 extends layout
 block content
- 
+    .row
+      .holder
+        h1 Hi Welcome to the produce page!
+             .grid-container
+                each items in item
+                 .item 
+                  h2.item Id: #{items.id}
+                  h2.item Name: #{items.name}
+                  h2.item Type: #{items.type}
+                  h2.item Price: €#{items.price}
+                  
+         
+                  

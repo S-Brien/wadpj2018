@@ -126,6 +126,7 @@ a:hover {
 fieldset{
     text-align: left;
     width:75%;
+    height:75%;
     display: block;
 }
 
@@ -153,6 +154,31 @@ h3{
     color:#cc9900;
     
 }
+
+form{
+    padding-left:12.5%;
+}
+
+
+
+.grid-container {
+    color:brown;
+  display: grid;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  /* background-color: #ffffff; /* Comment this out later to remove the background color when not needed */
+  padding: 10px;
+}
+
+
+.item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 5px 0;
+  
+}
+
 
 .footer {
     background-color: #FFE0C0;

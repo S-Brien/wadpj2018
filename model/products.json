@@ -4,12 +4,29 @@
         "type": "pastry",
         "id": 1,
         "price": "1.99"
+    },
+    {
+        "name": "jambon",
+        "type": "pastry",
+        "id": 2,
+        "price": "2.29"
+    },
+    {
+        "name": "Brown Bread",
+        "id": 3,
+        "type": "Bread",
+        "price": "2.99"
+    },
+    {
+        "name": "Cupcake",
+        "id": 4,
+        "type": "cake",
+        "price": ".99"
+    },
+    {
+        "name": "Birthday Cake",
+        "id": 5,
+        "type": "Cake",
+        "price": "19.99"
     }
-    
-    
-    
-    
-    
-    
-    
 ]

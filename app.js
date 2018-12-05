@@ -10,6 +10,9 @@ app.use(express.static("views"));// this is to look into the views folder
 app.use(express.static("scripts")); // look directly into the scripts folder for the css file
 app.use(express.static("images")); //we'll now look in the images folder
 
+app.use(express.static("model")); //we'll now look in the images folder
+
+
 // this will allow access to the json file in the model folder
 var item = require("./model/products.json");
 
@@ -25,9 +28,10 @@ console.log("Home Page Done"); // used to output activity in the console
 });
 
 app.get('/produce', function(req, res){
-    
-     res.render("produce.jade"); //this will render the new products page
+  //  res.send(item)
+  res.render("produce.jade", {item:item}); //this will render the new products page
      console.log("Produce page");
+     console.log(item);
   });
   
 
@@ -36,6 +40,8 @@ app.get('/add', function(req, res){
      res.render("add.jade"); //this will render the new products page
      console.log("Add Inventory page");
   });
+  
+  
   
  // route to render contact info page 
 app.post("/add", function(req, res){
@@ -85,7 +91,7 @@ app.post("/add", function(req, res){
     }
     
   })
-  res.redirect("/produce.jade");
+  res.redirect("/");
     
     
 });
@@ -104,7 +110,7 @@ app.get("/deletecontact/:id", function(req, res){
   
   item.splice(index, 1);
   json = JSON.stringify(item, null, 4); // converts the data to a json file and the null and 4 represent how it is structuere. 4 is indententation 
-      fs.writeFile('./model/cproducts.json', json, 'utf8')
+      fs.writeFile('./model/products.json', json, 'utf8')
   res.redirect("/produce");
     
 });
