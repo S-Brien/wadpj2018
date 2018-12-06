@@ -127,6 +127,10 @@ a:hover {
     background-image: url('/platter.jpg');
 }
 
+.normal1:hover{
+    background-image: url('/b1.jpeg');
+}
+
 
 fieldset{
     text-align: left;
