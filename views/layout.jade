@@ -3,7 +3,8 @@ html
   head
     meta(charset='UTF-8')
     title Bakery Application
-    link(rel='stylesheet', href='app.css', type='text/css')
+    link(rel='stylesheet', href='../app.css', type='text/css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
   body
     .spacers
       h1
@@ -12,6 +13,10 @@ html
         br
         br
         img#poster.logiIm(alt='lo', src='../logo.jpg' style = "height:5%")
+        br
+        button.button2#show Show/Hide Nav Menu and Log
+
+        
       .navhold
         ul
           li
@@ -21,9 +26,29 @@ html
           li
             a(href='/add') Add Inventory
           li
-            a(href='/information') Information
+            a(href='/employees') Employees
+          li
+            a(href='/addemp') Add Employee  
+          li
+            a(href='/suppliers') Supplier
+          li
+            a(href='/addsupplier') Add Supplier
+        
+            
         block content
+        
+        button4(type='button', onclick="document.getElementById('date_time_button').innerHTML = Date()")
+          | Click and see Date and Time.
+          p#date_time_button
 
         .footer
              p SCAR&copy Bakery Application
              p The Images are sourced from multiple places
+        script.
+          $(document).ready(function(){
+          $("#show").click(function(){
+          $("ul, img").slideToggle("slow");
+          });
+
+          });
+          

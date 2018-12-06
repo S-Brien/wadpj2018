@@ -1,0 +1,24 @@
+extends layout
+block content
+          .row
+            h1 Welcome to the edit Employee page
+                 .grid-container 
+                  .item
+                  each sups in indThree
+                    form(method="post")
+                     fieldset
+                      label(for="name") Supplier Name:
+                      input(name="name", type="text", value="#{sups.name}", style="display:block")
+                      br
+                      label(for="ingredient") Ingredient Ordered:
+                      input(name="ingredient", type="text", value="#{sups.ingredient}", style="display:block")
+                      br
+                      label(for="phone") Mobile:
+                      input(name="phone", type="tel", value="#{sups.phone}", style="display:block")
+                      br
+                      label(for="email") E-mail:
+                      input(name="email", type="email", value="#{sups.email}", style="display:block")
+                      br
+                      button.button(type="submit") Edit Supplier
+                      
+                      

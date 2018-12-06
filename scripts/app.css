@@ -18,14 +18,15 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #FFE0C0;
-    width:50%;
-    margin-left:25%;
+    width:75%;
+    margin-left:12.5%;
+    display:none;
 }
 
 li {
     float: left;
     text-align:center;
-    width:25%;
+    width:14.2%;
 }
 
 li a {
@@ -122,6 +123,10 @@ a:hover {
     height: 300px;
     margin: 1%;
 }
+.normal2:hover{
+    background-image: url('/platter.jpg');
+}
+
 
 fieldset{
     text-align: left;
@@ -162,12 +167,11 @@ form{
 
 
 .grid-container {
-    color:brown;
+  color:brown;
   display: grid;
-  align-content: center;
+  align-content: left;
   grid-template-columns: auto auto auto;
-  grid-gap: 10px;
-  /* background-color: #ffffff; /* Comment this out later to remove the background color when not needed */
+  grid-gap: 5px;
   padding: 10px;
 }
 
@@ -178,6 +182,46 @@ form{
   padding: 5px 0;
   
 }
+
+a.button {
+    background-color: #ffcc99; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width:50%;
+    margin:5px;
+}
+
+.button2 {
+    background-color: #FFE0C0;
+    border: solid;
+    border-color: brown;
+    color:brown;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: bold;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+
+button4{
+    background-color: #FFE0C0;
+    border: solid;
+    border-color: brown;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: bold;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
 
 
 .footer {

@@ -1,0 +1,21 @@
+extends layout
+block content
+      .row
+          .formHold
+          h3.itemtitle Add New Employee <br><br>
+            form(method="post")
+              fieldset 
+                label(for="name") Employee Name:
+                input(name="name", type="text", placeholder="Enter a Name", required, pattern="[a-zA-Z][A-Za-z' -]+{1,25}" title="only etters and spaces please. You must have at least one letter" )
+                label(for="email") Email:
+                input(name="email", type="email", placeholder="Enter an Email", required, pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", title ="please enter a valid email with an @ symbol and a .ie for example, lowecase letters only")
+                label(for="role") Role:
+                input(name="role", type="text", placeholder="Enter Employee Role", required, pattern="[a-zA-Z][A-Za-z' -]+{3,15}", title="please enter only letters and spaces, At least three letters needed")
+                label(for="mobile") Mobile Number:
+                input(name="mobile", type="mobile", placeholder="Enter Employee Mobile Number", required, pattern="[0-9]{10,10}", title="please enter a valid 10 digit mobile number")
+                button.button5(type="submit", onclick='myFunction()') Add new Employee
+           
+            script.
+              function myFunction() {
+              alert("You have added a new Employee\nThank You!");
+              }

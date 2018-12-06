@@ -1,0 +1,16 @@
+extends layout
+block content
+      .row
+          .formHold
+          h3.itemtitle Add New Employee <br><br>
+            form(method="post")
+              fieldset 
+                label(for="name") Supplier Name:
+                input(name="name", type="text", placeholder="Enter a Name", required, pattern="[a-zA-Z][A-Za-z' -]+{1,25}" title="only letters and spaces please. You must have at least one letter" )
+                label(for="ingredient") Ingredient Ordered:
+                input(name="ingredient", type="text", placeholder="Enter Supplier Ingredient", required, pattern="[a-zA-Z][A-Za-z' -]+")
+                label(for="phone") Landline Number:
+                input(name="phone", type="phone", placeholder="Enter Supplier Landline Number", required, pattern="[0-9]{7,10}")
+                label(for="email") Email:
+                input(name="email", type="email", placeholder="Enter an Email", required, pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$")
+                button.button(type="submit") Add new Supplier

@@ -1,0 +1,22 @@
+extends layout
+block content
+          .row
+            h1 Welcome to the edit Employee page
+                .grid-container 
+                 .item
+                  each emps in indTwo
+                    form(method="post")
+                     fieldset
+                      label(for="name") Name:
+                      input(style="display:block", name="name", type="text", value="#{emps.name}", required, pattern="[a-zA-Z][A-Za-z' -]+{1,25}" title="only letters and spaces please. You must have at least one letter")
+                      br
+                      label(for="email") E-mail:
+                      input(style="display:block",name="email", type="email", value="#{emps.email}", required, pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$")
+                      br
+                      label(for="role") Role:
+                      input(style="display:block",name="role", type="text", value="#{emps.role}")
+                      br
+                      label(for="mobile") Mobile:
+                      input(style="display:block",name="mobile", type="tel", value="#{emps.mobile}")
+                      br
+                      button.button(type="submit") Edit Employee

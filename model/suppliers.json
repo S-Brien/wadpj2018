@@ -1,0 +1,30 @@
+[
+    {
+        "name": "odlums",
+        "ingredient": "flour",
+        "id": 1,
+        "phone": "8985647",
+        "email": "jerry@odlums.ie"
+    },
+    {
+        "name": "DoughRayM2",
+        "ingredient": "Gluten Free Flour",
+        "id": 3,
+        "phone": "9989898",
+        "email": "casie@drm.ie"
+    },
+    {
+        "name": "doughboy",
+        "ingredient": "dough",
+        "id": 4,
+        "phone": "9878989",
+        "email": "jh@doughby.ie"
+    },
+    {
+        "name": "Premier Dairies",
+        "ingredient": "milk",
+        "id": 5,
+        "phone": "8348978",
+        "email": "john@pd.ie"
+    }
+]

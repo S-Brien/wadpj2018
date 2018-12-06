@@ -1,0 +1,16 @@
+extends layout
+block content
+    .row
+      .holder
+        h1 Hi this is the Suppliers Information Page.
+             .grid-container
+                each sups in sup
+                 .item 
+                  h2.item Id: #{sups.id}
+                  h2.item Name: #{sups.name}
+                  h2.item Ingredient Ordered: #{sups.ingredient}
+                  h2.item phone: #{sups.phone}
+                  h2.item Email: #{sups.email}
+                  a.button(href="/deletesupplier/#{sups.id}") Delete <br>
+                  a.button(href="/editsupplier/#{sups.id}") Edit
+                  

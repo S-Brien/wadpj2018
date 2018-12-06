@@ -1,0 +1,15 @@
+extends layout
+block content
+    .row
+      .holder
+        h1 Hi This is the Employees Page.
+             .grid-container
+                each emps in emp
+                 .item 
+                  h2.item Id: #{emps.id}
+                  h2.item Name: #{emps.name}
+                  h2.item Email: #{emps.email}
+                  h2.item Role: #{emps.role}
+                  h2.item Mobile: #{emps.mobile}
+                  a.button(href="/deleteemployee/#{emps.id}") Delete <br>
+                  a.button(href="/editemployee/#{emps.id}") Edit 

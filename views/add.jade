@@ -6,16 +6,9 @@ block content
             form(method="post")
               fieldset 
                 label(for="name") Product Name:
-                input(name="name", type="text", placeholder="Enter a product Name Letters only", required, pattern="[A-Za-z]")
+                input(name="name", type="text", placeholder="Enter a product Name", required, pattern="[a-zA-Z][A-Za-z' -]+")
                 label(for="type") Type:
-                input(name="type", type="text", placeholder="Enter a Product Type")
+                input(name="type", type="text", placeholder="Enter a Product Type", required, pattern="[a-zA-Z][A-Za-z' -]+")
                 label(for="price") Price:
-                input(name="price", type="text", placeholder="Enter a price for this product")
+                input(name="price", type="text", placeholder="Enter a price for this product", required, pattern="[0-9]+([\.][0-9]{0,2})?" )
                 button.button1(type="submit") Create New Inventory Item
-                         
-                         
-                         
-                         
-                         
-                         
-    
