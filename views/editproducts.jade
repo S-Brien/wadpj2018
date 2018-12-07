@@ -1,20 +1,20 @@
 extends layout
 block content
           .row
-            h1 Welcome to the edit product page
-                 .grid-container 
-                  .item
+            h1 Welcome to the edit produce page
+                .grid-container 
+                 .item
                   each items in indOne
                     form(method="post")
                      fieldset
                       label(for="name") Name:
-                      input(name="name", type="text", value="#{items.name}", style="display:block")
+                      input(name="name", type="text", value="#{items.name}", style="display:block", required, pattern="[a-zA-Z][A-Za-z' -]+{1,25}" title="only etters and spaces please. You must have at least one letter")
                       br
                       label(for="type") Type:
-                      input(name="type", type="text", value="#{items.type}", style="display:block")
+                      input(name="type", type="text", value="#{items.type}", style="display:block", required, pattern="[a-zA-Z][A-Za-z' -]+{3,25}" title="only etters and spaces please. You must have at least Three letters")
                       br
                       label(for="price") Price:
-                      input(name="price", type="text", value="#{items.price}", style="display:block")
+                      input(name="price", type="text", value="#{items.price}", style="display:block", required, pattern="[0-9]+([\.][0-9]{0,2})?" )
                       br
                       button.button(type="submit") Edit Product
                            

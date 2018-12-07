@@ -14,9 +14,9 @@ block content
                       input(style="display:block",name="email", type="email", value="#{emps.email}", required, pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$")
                       br
                       label(for="role") Role:
-                      input(style="display:block",name="role", type="text", value="#{emps.role}")
+                      input(style="display:block",name="role", type="text", value="#{emps.role}", required, pattern="[a-zA-Z][A-Za-z' -]+{3,15}", title="please enter only letters and spaces, At least three letters needed")
                       br
                       label(for="mobile") Mobile:
-                      input(style="display:block",name="mobile", type="tel", value="#{emps.mobile}")
+                      input(style="display:block",name="mobile", type="tel", value="#{emps.mobile}", required, pattern="[0-9]{10,10}", title="please enter a valid 10 digit mobile number")
                       br
                       button.button(type="submit") Edit Employee

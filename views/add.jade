@@ -2,7 +2,7 @@ extends layout
 block content
       .row
           .formHold
-          h3.itemtitle Add New Inventory <br><br>
+          h3.itemtitle Add New Produce <br><br>
             form(method="post")
               fieldset 
                 label(for="name") Product Name:
@@ -11,4 +11,4 @@ block content
                 input(name="type", type="text", placeholder="Enter a Product Type", required, pattern="[a-zA-Z][A-Za-z' -]+")
                 label(for="price") Price:
                 input(name="price", type="text", placeholder="Enter a price for this product", required, pattern="[0-9]+([\.][0-9]{0,2})?" )
-                button.button1(type="submit") Create New Inventory Item
+                button.button1(type="submit") Create New Produce Item
