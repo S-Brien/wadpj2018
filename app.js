@@ -18,11 +18,11 @@ app.use(express.static("images")); //we'll now look in the images folder for the
 app.use(express.static("model")); //This is so we can get to the json files in the model folder
 
 
-// this will allow access to the json file in the model folder
+// this will allow access to the products json file in the model folder
 var item = require("./model/products.json");
-
+// this will allow access to the employees json file in the model folder
 var emp = require("./model/employees.json");
-
+// this will allow access to the suppliers json file in the model folder
 var sup = require("./model/suppliers.json");
 
 

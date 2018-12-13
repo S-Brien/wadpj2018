@@ -7,17 +7,10 @@
         "email": "jerry@odlums.ie"
     },
     {
-        "name": "DoughRayM2",
-        "ingredient": "Gluten Free Flour",
-        "id": 3,
-        "phone": "9989898",
-        "email": "casie@drm.ie"
-    },
-    {
         "name": "doughboy",
         "ingredient": "dough",
         "id": 4,
-        "phone": "9878989",
+        "phone": "8427545",
         "email": "jh@doughby.ie"
     },
     {
@@ -31,13 +24,6 @@
         "name": "Stephen",
         "ingredient": "biscuits",
         "id": 6,
-        "phone": "8585858",
-        "email": "st@st.ie"
-    },
-    {
-        "name": "Stephen",
-        "ingredient": "biscuits",
-        "id": 7,
         "phone": "8585858",
         "email": "st@st.ie"
     }
