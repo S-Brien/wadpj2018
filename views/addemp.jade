@@ -13,10 +13,10 @@ block content
                 input(name="role", type="text", placeholder="Enter Employee Role", required, pattern="[a-zA-Z][A-Za-z' -]+{3,15}", title="please enter only letters and spaces, At least three letters needed")
                 label(for="mobile") Mobile Number:
                 input(name="mobile", type="mobile", placeholder="Enter Employee Mobile Number", required, pattern="[0-9]{10,10}", title="please enter a valid 10 digit mobile number")
-                label(for="password") Password:
+                label(for="password") Admin Password:
                 input#password(placeholder='Password', required='', type='password')
-                label(for="vpassword") Verify Password:
-                input#confirm_password(placeholder='Confirm Password', required='', type='password')
+                label(for="vpassword") Verify Admin Password:
+                input#confirm_password(placeholder='Confirm Password', required='', type='password',)
                 button.button5(type="submit") Add new Employee
            
             

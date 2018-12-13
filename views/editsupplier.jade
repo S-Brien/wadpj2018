@@ -18,7 +18,23 @@ block content
                       br
                       label(for="email") E-mail:
                       input(name="email", type="email", value="#{sups.email}", style="display:block")
+                      label(for="password") Admin Password:
+                      input#password(placeholder='Password', required='', type='password')
+                      label(for="vpassword") Verify Admin Password:
+                      input#confirm_password(placeholder='Confirm Password', required='', type='password')
                       br
                       button.button(type="submit") Edit Supplier
                       
+                      script.
+                        var password = document.getElementById("password")
+                        , confirm_password = document.getElementById("confirm_password");
+                        function validatePassword(){
+                        if(password.value != confirm_password.value) {
+                        confirm_password.setCustomValidity("Passwords Don't Match");
+                        } else {
+                        confirm_password.setCustomValidity('');
+                        }
+                        }
+                        password.onchange = validatePassword;
+                        confirm_password.onkeyup = validatePassword;
                       

@@ -13,4 +13,11 @@ block content
           h2 Occasion Foods
     .spacers
       br
+      
+      script.
+        $(document).ready(function(){
+        $("h1,h2").click(function(){
+        $(this).hide("slow");
+        });
+        });
     
