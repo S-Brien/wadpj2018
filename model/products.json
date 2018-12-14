@@ -7,14 +7,14 @@
     },
     {
         "name": "Birthday Cake",
-        "type": "Cake",
+        "type": "cake",
         "id": 3,
-        "price": "27.99"
+        "price": "28.99"
     },
     {
-        "name": "Brown Bread",
+        "name": "jambon",
         "id": 4,
-        "type": "Bread",
-        "price": "2.99"
+        "type": "pastry",
+        "price": "1.99"
     }
 ]

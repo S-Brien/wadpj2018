@@ -7,7 +7,7 @@
         "mobile": "0851455998"
     },
     {
-        "name": "Liam",
+        "name": "Liam Mc",
         "email": "lmc@cml.ie",
         "id": 5,
         "role": "Baker",
@@ -28,13 +28,6 @@
         "mobile": "0879797979"
     },
     {
-        "name": "Pola",
-        "email": "st@st.ie",
-        "id": 16,
-        "role": "owner",
-        "mobile": "0879797979"
-    },
-    {
         "name": "Stephen",
         "email": "stephen@st.ie",
         "id": 17,
@@ -42,10 +35,10 @@
         "mobile": "0851174998"
     },
     {
-        "name": "Stephen",
-        "email": "st@st.ie",
+        "name": "adam",
+        "email": "adam@dd.ie",
         "id": 18,
-        "role": "owner",
-        "mobile": "0879797979"
+        "role": "boss",
+        "mobile": "0854444444"
     }
 ]
